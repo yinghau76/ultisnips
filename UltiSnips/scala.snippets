@@ -1,0 +1,174 @@
+# :vim:ft=snippets:
+
+snippet A "Array" i
+Array
+endsnippet
+
+snippet App "Application" i
+Application
+endsnippet
+
+snippet B "Boolean" i
+Boolean
+endsnippet
+
+snippet By "Byte" i
+Byte
+endsnippet
+
+snippet C "Char" i
+Char
+endsnippet
+
+snippet D "Double" i
+Double
+endsnippet
+
+snippet F "Float" i
+Float
+endsnippet
+
+snippet I "Int" i
+Int
+endsnippet
+
+snippet L "List" i
+List
+endsnippet
+
+snippet Lo "Long" i
+Long
+endsnippet
+
+snippet M "Map" i
+Map
+endsnippet
+
+snippet ov
+override
+endsnippet
+
+snippet S "String" i
+String
+endsnippet
+
+snippet U "Unit" i
+Unit
+endsnippet
+
+snippet 1- "one pair" i
+${1:key} -> ${2:value}
+endsnippet
+
+snippet 2- "two pairs" i
+${1:key} -> ${2:value}, ${3:key} -> ${4:value}
+endsnippet
+
+snippet 3- "three paris" i
+${1:key} -> ${2:value}, ${3:key} -> ${4:value}, ${5:key} -> ${6:value}
+endsnippet
+
+snippet 1: "one parameter" i
+${1:first}: ${2:Type}
+endsnippet
+
+snippet 2: "two parameters" i
+${1:first}: ${2:Type}, ${3:second}: ${4:Type}
+endsnippet
+
+snippet 3: "three parameters" i
+${1:first}: ${2:Type}, ${3:second}: ${4:Type}, ${5:third}: ${6:Type}
+endsnippet
+
+snippet object 
+object ${1:ObjectName} extends Application {
+	${0}
+}
+endsnippet
+
+snippet class 
+class ${1:ClassName} {
+	${0}
+}
+endsnippet
+
+snippet def 
+def ${1:method}(${2}) {
+	${0}
+}
+endsnippet
+
+snippet def: "def with return type" !b
+def ${1:method}(${2}):${3:Unit} {
+	${0}
+}
+endsnippet
+
+snippet def=
+def ${1:method}(${2}) = {
+	${0}
+}
+endsnippet
+
+snippet for
+for (${1} <- ${2}) {
+	${0}
+}
+endsnippet
+
+snippet foreach
+foreach {${1} =>
+	${0}
+}
+endsnippet
+
+snippet if
+if (${1:condition}) {
+	${0}
+}
+endsnippet
+
+snippet main
+def main(args: Array[String]) {
+	${1}
+}
+endsnippet
+
+snippet match
+match {
+	case ${1} => ${2}
+}
+endsnippet
+
+snippet obj
+object ${1:ObjectName} {
+	${0}
+}
+endsnippet
+
+snippet p
+println(${1})
+endsnippet
+
+snippet try
+try {
+	${0}
+} catch	{
+	case ${1:Exception} => ${2}
+}
+endsnippet
+
+snippet tcf "try, catch, and finally" !b
+try {
+	${0}
+} catch {
+	case ${1:Exception} => ${2}
+} finally {
+	${3}
+}
+endsnippet
+snippet while
+while (${1:condition}) {
+	${0:// expression}
+}
+endsnippet
